@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[Avalanche Canada and Tesera Systems Inc.]]></Parameter>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">-126.4087,53.1929,6</Parameter>
+  <Parameter name="description"><![CDATA[The overlay features, labels, regions, etc.]]></Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">22</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[ac-overlay-styles]]></Parameter>
+  <Parameter name="source"><![CDATA[mapbox:///tesera.0097b017]]></Parameter>
+</Parameters>
+
+
+<Layer name="cac-polygons-regions"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="cac-polygons" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <LineSymbolizer stroke-linejoin="round" stroke-width="1.6" stroke="#b43a7e" />
+    <PolygonSymbolizer fill-opacity="0" fill="#c8d3d9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>1500000</MaxScaleDenominator>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <LineSymbolizer stroke-linejoin="round" stroke-width="1.6" stroke="#b43a7e" />
+    <PolygonSymbolizer fill-opacity="0.3" fill="#c8d3d9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <MinScaleDenominator>1500000</MinScaleDenominator>
+    <LineSymbolizer stroke-linejoin="round" stroke-width="1.6" stroke="#b43a7e" />
+    <PolygonSymbolizer fill-opacity="0.5" fill="#c8d3d9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <LineSymbolizer stroke-linejoin="round" stroke-width="1.6" stroke="#b43a7e" />
+    <PolygonSymbolizer fill-opacity="0.5" fill="#c8d3d9" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <LineSymbolizer stroke-linejoin="round" stroke-width="1.6" stroke="#b43a7e" />
+    <PolygonSymbolizer fill-opacity="0.7" fill="#c8d3d9" />
+  </Rule>
+</Style>
+<Layer name="cac-polygons"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>cac-polygons</StyleName>  </Layer>
+
+<Style name="cac-polygons-regions-centroids" filter-mode="first">
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([display] = 'North Shore')</Filter>
+    <TextSymbolizer dx="5" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" minimum-distance="14" placement-type="simple" size="16" wrap-width="36" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <Filter>([display] = 'North Coast')</Filter>
+    <TextSymbolizer dy="-5" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" minimum-distance="14" placement-type="simple" size="16" wrap-width="36" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>12500000</MinScaleDenominator>
+    <TextSymbolizer face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" minimum-distance="14" placement-type="simple" size="16" wrap-width="36" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="cac-polygons-regions-centroids"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>cac-polygons-regions-centroids</StyleName>  </Layer>
+
+<Style name="cac-polygons-centroids" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'North Shore')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'North Shore')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'North Shore')</Filter>
+    <TextSymbolizer dy="6" dx="-2" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Whistler- Blackcomb')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Whistler- Blackcomb')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Whistler- Blackcomb')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'South Coast - Inland')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'South Coast - Inland')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'South Coast - Inland')</Filter>
+    <TextSymbolizer dy="0" dx="6" wrap-width="50" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Vancouver Island, VAIC')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Vancouver Island, VAIC')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Vancouver Island, VAIC')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Sea-to-Sky')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Sea-to-Sky')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Sea-to-Sky')</Filter>
+    <TextSymbolizer dy="-15" dx="-2" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Kootenay Boundary')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Kootenay Boundary')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Kootenay Boundary')</Filter>
+    <TextSymbolizer dy="2" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'South Columbia')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'South Columbia')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'South Columbia')</Filter>
+    <TextSymbolizer dy="-1" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Purcells')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Purcells')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Purcells')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Lizard Range and Flathead')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Lizard Range and Flathead')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Lizard Range and Flathead')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Waterton National Park')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Waterton National Park')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Waterton National Park')</Filter>
+    <TextSymbolizer dy="-6" dx="6" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'South Rockies')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'South Rockies')</Filter>
+    <TextSymbolizer dy="0" dx="44" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'South Rockies')</Filter>
+    <TextSymbolizer dy="-2" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Kananaskis Country, Alberta Parks')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Kananaskis Country, Alberta Parks')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="90" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Kananaskis Country, Alberta Parks')</Filter>
+    <TextSymbolizer dy="-0.2" dx="12" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'North Columbia')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'North Columbia')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'North Columbia')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Glacier National Park')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Glacier National Park')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="90" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Glacier National Park')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="60" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Banff Yoho &amp; Kootenay National Park')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="90" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Banff Yoho &amp; Kootenay National Park')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="90" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Banff Yoho &amp; Kootenay National Park')</Filter>
+    <TextSymbolizer dy="-6" dx="6" wrap-width="80" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Jasper National Park')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Jasper National Park')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Jasper National Park')</Filter>
+    <TextSymbolizer dy="-6" dx="6" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'North Rockies')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'North Rockies')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'North Rockies')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Northwest Inland')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Northwest Inland')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Northwest Inland')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Northwest Coastal')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Northwest Coastal')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Northwest Coastal')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>3000000</MaxScaleDenominator>
+    <Filter>([display] = 'Cariboos')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>6500000</MaxScaleDenominator>
+    <MinScaleDenominator>3000000</MinScaleDenominator>
+    <Filter>([display] = 'Cariboos')</Filter>
+    <TextSymbolizer dy="44" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <MinScaleDenominator>6500000</MinScaleDenominator>
+    <Filter>([display] = 'Cariboos')</Filter>
+    <TextSymbolizer dy="0" dx="0" wrap-width="70" size="12" face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500000</MaxScaleDenominator>
+    <TextSymbolizer face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement-type="simple" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+</Style>
+<Layer name="cac-polygons-centroids"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>cac-polygons-centroids</StyleName>  </Layer>
+
+</Map>
