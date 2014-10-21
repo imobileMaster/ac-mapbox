@@ -1,19 +1,30 @@
 _prefs: 
   disabled: []
   inspector: false
-  mapid: ''
-  rev: ''
+  mapid: tesera.0097b017
+  rev: s-39e8cdb4
   saveCenter: true
 attribution: Avalanche Canada and Tesera Systems Inc.
 center: 
-  - -108.5889
-  - 53.3243
+  - -120.7837
+  - 52.8625
   - 6
 description: Vector sources for vector tiles (Avalanche Canada Website)
 Layer: 
-  - id: cac-polygons-centroids
+  - id: cac-polygons-regions
     Datasource: 
-      file: "..\\features\\cac-polygons-centroids.geojson"
+      file: "..\\features\\cac-polygons-regions.geojson"
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: 
+      display: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: cac-polygons
+    Datasource: 
+      file: "..\\features\\cac-polygons.geojson"
       layer: OGRGeoJSON
       type: ogr
     description: ''
@@ -21,7 +32,7 @@ Layer:
       id: String
       display: String
     properties: 
-      "buffer-size": 64
+      "buffer-size": 8
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: cac-polygons-regions-centroids
     Datasource: 
@@ -34,16 +45,17 @@ Layer:
     properties: 
       "buffer-size": 64
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
-  - id: cac-polygons-regions
+  - id: cac-polygons-centroids
     Datasource: 
-      file: "..\\features\\cac-polygons-regions.geojson"
+      file: "..\\features\\cac-polygons-centroids.geojson"
       layer: OGRGeoJSON
       type: ogr
     description: ''
     fields: 
+      id: String
       display: String
     properties: 
-      "buffer-size": 8
+      "buffer-size": 64
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
 maxzoom: 13
 minzoom: 0
