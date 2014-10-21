@@ -1,0 +1,50 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: ''
+  rev: ''
+  saveCenter: true
+attribution: Avalanche Canada and Tesera Systems Inc.
+center: 
+  - -108.5889
+  - 53.3243
+  - 6
+description: Vector sources for vector tiles (Avalanche Canada Website)
+Layer: 
+  - id: cac-polygons-centroids
+    Datasource: 
+      file: "..\\features\\cac-polygons-centroids.geojson"
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: 
+      id: String
+      display: String
+    properties: 
+      "buffer-size": 64
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: cac-polygons-regions-centroids
+    Datasource: 
+      file: "..\\features\\cac-polygons-regions-centroids.geojson"
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: 
+      display: String
+    properties: 
+      "buffer-size": 64
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: cac-polygons-regions
+    Datasource: 
+      file: "..\\features\\cac-polygons-regions.geojson"
+      layer: OGRGeoJSON
+      type: ogr
+    description: ''
+    fields: 
+      display: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 13
+minzoom: 0
+name: ac-source

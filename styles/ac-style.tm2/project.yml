@@ -1,0 +1,29 @@
+_prefs: 
+  mapid: tesera.1cc24d36
+  saveCenter: false
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: "<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>"
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -125.5957
+  - 54.246
+  - 6
+description: |
+  mapbox-studio styles for Avalanche Canada
+  
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 22
+minzoom: 0
+name: ac-styles
+source: "mapbox:///tesera.ce3c8a42"
+styles: 
+  - style.mss
+template: ''
