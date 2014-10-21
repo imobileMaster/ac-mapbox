@@ -458,7 +458,4 @@
   [display='North Coast']{
     text-dy: -5;
     }
-  [display='North Shore']{
-    text-dx: 5;
-    }  
 }
