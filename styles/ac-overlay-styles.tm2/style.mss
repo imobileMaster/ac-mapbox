@@ -28,17 +28,7 @@
   [zoom = 7] {polygon-opacity:0.5;}
   [zoom = 8] {polygon-opacity:0.5;}
   [zoom = 9] {polygon-opacity:0.3;}
-  [zoom >= 10] {
-    polygon-opacity:0;
-    text-name:'[display]';
-    text-face-name: @opensans;
-    text-fill: #B43A7E;
-    text-halo-fill: @place_halo;
-    text-halo-radius: 2;
-    text-wrap-before: true;
-    text-placement: line;
-    text-dy: -9;
-  }
+  [zoom >= 10] {polygon-opacity:0;}
 }
   #cac-polygons-centroids [zoom >= 6] {
 //test facility so icons draw
