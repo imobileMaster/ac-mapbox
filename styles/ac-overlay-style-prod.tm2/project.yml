@@ -1,0 +1,27 @@
+_prefs: 
+  mapid: avalanchecanada.853e3ddc
+  saveCenter: true
+_properties: 
+  bridge: 
+    "group-by": layer
+attribution: Avalanche Canada and Tesera Systems Inc.
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - 0
+  - 20
+  - 3
+description: The overlay features, labels, regions, etc.
+format: "png8:m=h"
+interactivity_layer: ''
+layers: null
+maxzoom: 22
+minzoom: 0
+name: ac-overlay-style-prod
+source: "mapbox:///avalanchecanada.4c18a627"
+styles: 
+  - style.mss
+template: ''

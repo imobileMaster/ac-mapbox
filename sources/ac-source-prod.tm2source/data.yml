@@ -1,0 +1,63 @@
+_prefs: 
+  disabled: []
+  inspector: false
+  mapid: avalanchecanada.4c18a627
+  rev: s-8b5688d7
+  saveCenter: false
+attribution: Avalanche Canada and Tesera Systems Inc.
+center: 
+  - -113.291
+  - 53.8784
+  - 4
+description: Vector sources for vector tiles (Avalanche Canada Website)
+Layer: 
+  - id: cac-polygons
+    Datasource: 
+      file: "..\\features\\cac-polygons.geojson"
+      layer: OGRGeoJSON
+      type: ogr
+    description: cac-polygons
+    fields: 
+      id: String
+      display: String
+    properties: 
+      "buffer-size": 8
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: cac-polygons-centroids
+    Datasource: 
+      file: "..\\features\\cac-polygons-centroids.geojson"
+      layer: OGRGeoJSON
+      type: ogr
+    description: cac-polygons-centroids
+    fields: 
+      id: String
+      display: String
+    properties: 
+      "buffer-size": 64
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: cac-polygons-regions-centroids
+    Datasource: 
+      file: "..\\features\\cac-polygons-regions-centroids.geojson"
+      layer: OGRGeoJSON
+      type: ogr
+    description: cac-polygons-regions-centroids
+    fields: 
+      display: String
+    properties: 
+      "buffer-size": 64
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+  - id: cac-polylines
+    Datasource: 
+      file: "..\\features\\cac-polylines.geojson"
+      layer: OGRGeoJSON
+      type: ogr
+    description: cac-polylines
+    fields: 
+      id: String
+      display: String
+    properties: 
+      "buffer-size": 64
+    srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
+maxzoom: 13
+minzoom: 0
+name: ac-source-prod

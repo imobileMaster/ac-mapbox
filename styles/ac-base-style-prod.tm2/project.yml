@@ -1,0 +1,55 @@
+_prefs: 
+  baselayer: ''
+  mapid: avalanchecanada.3cd9ed23
+  print: true
+  saveCenter: false
+_properties: {}
+attribution: Avalanche Canada and Tesera Systems Inc.
+bounds: 
+  - -180
+  - -85.0511
+  - 180
+  - 85.0511
+center: 
+  - -119.0039
+  - 53.2323
+  - 6
+description: A vector driven map providing recreational detail including contous.
+format: "png8:m=h"
+interactivity_layer: ''
+layers: 
+  - landcover
+  - landuse
+  - contour.line
+  - hillshade
+  - waterway
+  - water
+  - aeroway
+  - barrier_line
+  - building
+  - landuse_overlay
+  - tunnel
+  - road
+  - bridge
+  - admin
+  - country_label_line
+  - country_label
+  - marine_label
+  - state_label
+  - place_label
+  - water_label
+  - poi_label
+  - road_label
+  - waterway_label
+  - housenum_label
+  - contour.label
+maxzoom: 21
+minzoom: 0
+name: ac-base-style-prod
+source: "mapbox:///mapbox.mapbox-terrain-v1,mapbox.mapbox-streets-v5"
+styles: 
+  - style.mss
+  - road.mss
+  - label.mss
+  - poi.mss
+template: ''
