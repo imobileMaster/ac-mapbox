@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[Avalanche Canada and Tesera Systems Inc.]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">0,20,3</Parameter>
+  <Parameter name="center">-117.3257,50.9372,10</Parameter>
   <Parameter name="description"><![CDATA[The overlay features, labels, regions, etc.]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
@@ -415,8 +415,14 @@
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
     <StyleName>cac-polygons-regions-centroids</StyleName>  </Layer>
 
+<Style name="cac-polylines" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <TextSymbolizer face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement="line" dy="-7" ><![CDATA[[display]]]></TextSymbolizer>
+  </Rule>
+</Style>
 <Layer name="cac-polylines"
   srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
-      </Layer>
+    <StyleName>cac-polylines</StyleName>  </Layer>
 
 </Map>
