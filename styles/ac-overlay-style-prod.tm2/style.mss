@@ -41,11 +41,11 @@
 }
   #cac-polygons-centroids [zoom >= 6] {
  //test facility so icons draw
-  [zoom >= 6]{
-  marker-file: url("danger-rating-icon.svg");
-  marker-width: 60;
-  marker-allow-overlap: true;
- }
+ // [zoom >= 6]{
+ // marker-file: url("danger-rating-icon.svg");
+//  marker-width: 60;
+//  marker-allow-overlap: true;
+//}
   text-name:'[display]';
   text-face-name: @opensans;
   text-fill: #B43A7E;
