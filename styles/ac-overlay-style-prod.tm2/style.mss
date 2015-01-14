@@ -43,9 +43,9 @@
  //test facility so icons draw
  // [zoom >= 6]{
  // marker-file: url("danger-rating-icon.svg");
-//  marker-width: 60;
-//  marker-allow-overlap: true;
-//}
+ // marker-width: 80;
+ // marker-allow-overlap: true;
+ //}
   text-name:'[display]';
   text-face-name: @opensans;
   text-fill: #B43A7E;
@@ -53,6 +53,53 @@
   text-halo-radius: 2;
   text-wrap-before: true;
   text-placement-type: simple;
+  [display='Little Yoho']{
+    [zoom = 6]{
+    text-dy: -32;
+    text-dx: 0;      
+    text-wrap-width: 70;
+    text-size: 10;     
+    text-allow-overlap: true;            
+    }    
+    [zoom = 7]{
+    text-dy: -44;
+    text-dx: 0; 
+    text-wrap-width: 70;
+    text-size: 12;    
+    text-allow-overlap: true;      
+    } 
+    [zoom >= 8]{
+    text-dy: 44;
+    text-dx: 0;       
+    text-wrap-width: 70;
+    text-size: 12;          
+    text-allow-overlap: true;      
+    }    
+  }  
+  [display='Chic-Chocs, Avalanche Quebec']{
+    [zoom = 6]{
+    text-dy: 34;
+    text-dx: 0;      
+    text-wrap-width: 70;
+    text-size: 10;      
+    text-allow-overlap: true;      
+    }    
+    [zoom = 7]{
+    text-dy: 44;
+    text-dx: 0; 
+    text-wrap-width: 70;
+    text-size: 12;   
+    text-allow-overlap: true;
+    } 
+    [zoom >= 8]{
+    text-dy: 44;
+    text-dx: 0;       
+    text-wrap-width: 70;
+    text-size: 12;        
+    text-allow-overlap: true;      
+    }    
+  }   
+  
   [display='Cariboos']{
     [zoom = 6]{
     text-dy: 35;
@@ -259,10 +306,10 @@
     text-size: 12;             
     }  
   }  
-  [display='Waterton National Park']{
+  [display='Waterton Lakes National Park']{
     [zoom = 6]{
-    text-dy: -16;
-    text-dx: 20;      
+    text-dy: 0;
+    text-dx: 22;      
     text-wrap-width: 60;
     text-size: 10;    
     text-allow-overlap: true;
@@ -282,8 +329,8 @@
   }  
   [display='Lizard Range and Flathead']{
     [zoom = 6]{
-    text-dy: 35;
-    text-dx: 0;       
+    text-dy: 30;
+    text-dx: -1;       
     text-wrap-width: 70;
     text-size: 10;     
     text-allow-overlap: true;
@@ -385,7 +432,7 @@
     text-size: 12;             
     } 
   }  
-  [display='Vancouver Island, VAIC']{
+  [display='Vancouver Island VIAC']{
     [zoom = 6]{
     text-dy: 32;
     text-dx: 0;       
@@ -406,7 +453,7 @@
     text-size: 12;             
     } 
   }  
-  [display='South Coast - Inland']{
+  [display='South Coast Inland']{
     [zoom = 6]{
     text-dy: -26;
     text-dx: 12;       
@@ -427,7 +474,7 @@
     text-size: 12;             
     } 
   }  
-  [display='Whistler- Blackcomb']{
+  [display='Whistler Blackcomb']{
     [zoom = 6]{
     text-dy: -35;
     text-dx: 0;       
@@ -440,12 +487,14 @@
     text-dx: 0; 
     text-wrap-width: 70;
     text-size: 12;       
+    text-allow-overlap: true;            
     } 
     [zoom >= 8]{
     text-dy: 44;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 12;          
+    text-allow-overlap: true;            
     } 
   }   
   [display='North Shore']{

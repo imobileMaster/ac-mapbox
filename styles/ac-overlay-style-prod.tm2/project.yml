@@ -11,9 +11,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -123.4424
-  - 52.4895
-  - 6
+  - -122.1295
+  - 50.4732
+  - 8
 description: The overlay features, labels, regions, etc.
 format: "png8:m=h"
 interactivity_layer: ''
@@ -21,7 +21,7 @@ layers: null
 maxzoom: 22
 minzoom: 0
 name: ac-overlay-style-prod
-source: "mapbox:///avalanchecanada.4c18a627"
+source: "tmsource://c/Users/spencer/Documents/GitHub/ac-mapbox/sources/ac-source-prod.tm2source"
 styles: 
   - style.mss
 template: ''
