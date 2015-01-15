@@ -13,8 +13,17 @@
 
 
 
-//forecast centroid labels
-
+//forecast regional border labels
+#cac-polylines [zoom >= 10] {
+    text-name:'[display]';
+    text-face-name: @opensans;
+    text-fill: #B43A7E;
+    text-halo-fill: @place_halo;
+    text-halo-radius: 2;
+    text-wrap-before: true;
+    text-placement: line;
+    text-dy: -7;
+  }
 
 #cac-polygons [zoom > 5] {
   //forecast polygon global    
@@ -31,11 +40,12 @@
   [zoom >= 10] {polygon-opacity:0;}
 }
   #cac-polygons-centroids [zoom >= 6] {
-//test facility so icons draw
-//  [zoom >= 7]{
-//  marker-file: url("danger-rating-icon.svg");
-//  marker-width: 80;
-//    }
+ //test facility so icons draw
+ // [zoom >= 6]{
+ // marker-file: url("danger-rating-icon.svg");
+ // marker-width: 80;
+ // marker-allow-overlap: true;
+ //}
   text-name:'[display]';
   text-face-name: @opensans;
   text-fill: #B43A7E;
@@ -43,12 +53,59 @@
   text-halo-radius: 2;
   text-wrap-before: true;
   text-placement-type: simple;
-  [display='Cariboos']{
+  [display='Little Yoho']{
     [zoom = 6]{
-    text-dy: 0;
+    text-dy: -32;
+    text-dx: 0;      
+    text-wrap-width: 70;
+    text-size: 10;     
+    text-allow-overlap: true;            
+    }    
+    [zoom = 7]{
+    text-dy: -44;
+    text-dx: 0; 
+    text-wrap-width: 70;
+    text-size: 12;    
+    text-allow-overlap: true;      
+    } 
+    [zoom >= 8]{
+    text-dy: 44;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 12;          
+    text-allow-overlap: true;      
+    }    
+  }  
+  [display='Chic-Chocs, Avalanche Quebec']{
+    [zoom = 6]{
+    text-dy: 34;
+    text-dx: 0;      
+    text-wrap-width: 70;
+    text-size: 10;      
+    text-allow-overlap: true;      
+    }    
+    [zoom = 7]{
+    text-dy: 44;
+    text-dx: 0; 
+    text-wrap-width: 70;
+    text-size: 12;   
+    text-allow-overlap: true;
+    } 
+    [zoom >= 8]{
+    text-dy: 44;
+    text-dx: 0;       
+    text-wrap-width: 70;
+    text-size: 12;        
+    text-allow-overlap: true;      
+    }    
+  }   
+  
+  [display='Cariboos']{
+    [zoom = 6]{
+    text-dy: 35;
+    text-dx: 0;      
+    text-wrap-width: 70;
+    text-size: 10;          
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -65,10 +122,10 @@
   }
   [display='Northwest Coastal']{
     [zoom = 6]{
-    text-dy: 0;
+    text-dy: 35;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;             
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -85,10 +142,10 @@
   }  
   [display='Northwest Inland']{
     [zoom = 6]{
-    text-dy: 0;
+    text-dy: 35;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;           
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -105,10 +162,10 @@
   }
   [display='North Rockies']{
     [zoom = 6]{
-    text-dy: 0;
+    text-dy: 35;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;            
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -125,10 +182,11 @@
   } 
   [display='Jasper National Park']{
     [zoom = 6]{
-    text-dy: -6;
-    text-dx: 6;       
-    text-wrap-width: 70;
-    text-size: 12;             
+    text-dy: -20;
+    text-dx: 26;      
+    text-wrap-width: 80;
+    text-size: 10;  
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -145,10 +203,11 @@
   }  
   [display='Banff Yoho & Kootenay National Park']{
     [zoom = 6]{
-    text-dy: -6;
-    text-dx: 6;         
+    text-dy: -20;
+    text-dx: 26;      
     text-wrap-width: 80;
-    text-size: 12;             
+    text-size: 10;        
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -165,10 +224,11 @@
   }   
   [display='Glacier National Park']{
     [zoom = 6]{
-    text-dy: 0;
-    text-dx: 0;         
-    text-wrap-width: 60;
-    text-size: 12;             
+    text-dy: -32;
+    text-dx: 0;       
+    text-wrap-width: 70;
+    text-size: 10;    
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -185,10 +245,11 @@
   }     
   [display='North Columbia']{
     [zoom = 6]{
-    text-dy: 0;
+    text-dy: 32;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;     
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -205,10 +266,11 @@
   }  
   [display='Kananaskis Country, Alberta Parks']{
     [zoom = 6]{
-    text-dy: -0.2;
-    text-dx: 12;       
-    text-wrap-width: 70;
-    text-size: 12;             
+    text-dy: -10;
+    text-dx: 34;      
+    text-wrap-width: 80;
+    text-size: 10;    
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -225,10 +287,11 @@
   }  
   [display='South Rockies']{
     [zoom = 6]{
-    text-dy: -2;
-    text-dx: 0;       
-    text-wrap-width: 70;
-    text-size: 12;             
+    text-dy: -20;
+    text-dx: 32;      
+    text-wrap-width: 80;
+    text-size: 10;      
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 0;
@@ -243,12 +306,13 @@
     text-size: 12;             
     }  
   }  
-  [display='Waterton National Park']{
+  [display='Waterton Lakes National Park']{
     [zoom = 6]{
-    text-dy: -6;
-    text-dx: 6;       
-    text-wrap-width: 70;
-    text-size: 12;             
+    text-dy: 0;
+    text-dx: 22;      
+    text-wrap-width: 60;
+    text-size: 10;    
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -265,10 +329,11 @@
   }  
   [display='Lizard Range and Flathead']{
     [zoom = 6]{
-    text-dy: 0;
-    text-dx: 0;       
+    text-dy: 30;
+    text-dx: -1;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;     
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -285,10 +350,11 @@
   }  
   [display='Purcells']{
     [zoom = 6]{
-    text-dy: 0;
+    text-dy: 35;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;      
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -305,10 +371,11 @@
   }  
   [display='South Columbia']{
     [zoom = 6]{
-    text-dy: -1;
-    text-dx: 0;       
+    text-dy: -8;
+    text-dx: 30;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;    
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -325,10 +392,11 @@
   }    
   [display='Kootenay Boundary']{
     [zoom = 6]{
-    text-dy: 2;
+    text-dy: 32;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;      
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -345,10 +413,11 @@
   }  
   [display='Sea-to-Sky']{
     [zoom = 6]{
-    text-dy: -15;
-    text-dx: -2;       
+    text-dy: -26;
+    text-dx: -20;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;   
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -363,12 +432,13 @@
     text-size: 12;             
     } 
   }  
-  [display='Vancouver Island, VAIC']{
+  [display='Vancouver Island VIAC']{
     [zoom = 6]{
-    text-dy: 0;
+    text-dy: 32;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;      
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -383,12 +453,13 @@
     text-size: 12;             
     } 
   }  
-  [display='South Coast - Inland']{
+  [display='South Coast Inland']{
     [zoom = 6]{
-    text-dy: 0;
-    text-dx: 6;       
+    text-dy: -26;
+    text-dx: 12;       
     text-wrap-width: 50;
-    text-size: 12;             
+    text-size: 10;   
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
@@ -403,32 +474,36 @@
     text-size: 12;             
     } 
   }  
-  [display='Whistler- Blackcomb']{
+  [display='Whistler Blackcomb']{
     [zoom = 6]{
-    text-dy: 0;
+    text-dy: -35;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;     
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
     text-dx: 0; 
     text-wrap-width: 70;
     text-size: 12;       
+    text-allow-overlap: true;            
     } 
     [zoom >= 8]{
     text-dy: 44;
     text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 12;          
+    text-allow-overlap: true;            
     } 
   }   
   [display='North Shore']{
     [zoom = 6]{
-    text-dy: 6;
-    text-dx: -2;       
+    text-dy: 32;
+    text-dx: 0;       
     text-wrap-width: 70;
-    text-size: 12;             
+    text-size: 10;     
+    text-allow-overlap: true;
     }    
     [zoom = 7]{
     text-dy: 44;
