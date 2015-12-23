@@ -19,7 +19,7 @@
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
     
     <Datasource>
-       <Parameter name="file"><![CDATA[..\features\cac-polygons.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[../features/cac-polygons.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
        <Parameter name="type"><![CDATA[ogr]]></Parameter>
     </Datasource>
@@ -30,7 +30,7 @@
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
     
     <Datasource>
-       <Parameter name="file"><![CDATA[..\features\cac-polygons-centroids.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[../features/cac-polygons-centroids.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
        <Parameter name="type"><![CDATA[ogr]]></Parameter>
     </Datasource>
@@ -41,7 +41,7 @@
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
     
     <Datasource>
-       <Parameter name="file"><![CDATA[..\features\cac-polygons-regions-centroids.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[../features/cac-polygons-regions-centroids.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
        <Parameter name="type"><![CDATA[ogr]]></Parameter>
     </Datasource>
@@ -52,7 +52,7 @@
   srs="+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs">
     
     <Datasource>
-       <Parameter name="file"><![CDATA[..\features\cac-polylines.geojson]]></Parameter>
+       <Parameter name="file"><![CDATA[../features/cac-polylines.geojson]]></Parameter>
        <Parameter name="layer"><![CDATA[OGRGeoJSON]]></Parameter>
        <Parameter name="type"><![CDATA[ogr]]></Parameter>
     </Datasource>
