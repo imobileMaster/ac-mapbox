@@ -2,7 +2,7 @@ _prefs:
   disabled: []
   inspector: false
   mapid: avalanchecanada.4c18a627
-  rev: s-8b5688d7
+  rev: s-2caa311e
   saveCenter: false
 attribution: Avalanche Canada and Tesera Systems Inc.
 center: 
@@ -13,7 +13,7 @@ description: Vector sources for vector tiles (Avalanche Canada Website)
 Layer: 
   - id: cac-polygons
     Datasource: 
-      file: "../features/cac-polygons.geojson"
+      file: ../features/cac-polygons.geojson
       layer: OGRGeoJSON
       type: ogr
     description: cac-polygons
@@ -25,7 +25,7 @@ Layer:
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: cac-polygons-centroids
     Datasource: 
-      file: "../features/cac-polygons-centroids.geojson"
+      file: ../features/cac-polygons-centroids.geojson
       layer: OGRGeoJSON
       type: ogr
     description: cac-polygons-centroids
@@ -37,7 +37,7 @@ Layer:
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: cac-polygons-regions-centroids
     Datasource: 
-      file: "../features/cac-polygons-regions-centroids.geojson"
+      file: ../features/cac-polygons-regions-centroids.geojson
       layer: OGRGeoJSON
       type: ogr
     description: cac-polygons-regions-centroids
@@ -48,7 +48,7 @@ Layer:
     srs: +proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs
   - id: cac-polylines
     Datasource: 
-      file: "../features/cac-polylines.geojson"
+      file: ../features/cac-polylines.geojson
       layer: OGRGeoJSON
       type: ogr
     description: cac-polylines

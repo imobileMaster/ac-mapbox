@@ -7,7 +7,7 @@
   <Parameter name="center">-113.291,53.8784,4</Parameter>
   <Parameter name="description"><![CDATA[Vector sources for vector tiles (Avalanche Canada Website)]]></Parameter>
   <Parameter name="format">pbf</Parameter>
-  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"cac-polygons","description":"cac-polygons","fields":{"id":"String","display":"String"}},{"id":"cac-polygons-centroids","description":"cac-polygons-centroids","fields":{"id":"String","display":"String"}},{"id":"cac-polygons-regions-centroids","description":"cac-polygons-regions-centroids","fields":{"display":"String"}},{"id":"cac-polylines","description":"cac-polylines","fields":{"id":"String","display":"String"}}]}]]></Parameter>
+  <Parameter name="json"><![CDATA[{"vector_layers":[{"id":"cac-polygons","description":"cac-polygons","fields":{"display":"String","id":"String"}},{"id":"cac-polygons-centroids","description":"cac-polygons-centroids","fields":{"id":"String","display":"String"}},{"id":"cac-polygons-regions-centroids","description":"cac-polygons-regions-centroids","fields":{"display":"String"}},{"id":"cac-polylines","description":"cac-polylines","fields":{"id":"String","display":"String"}}]}]]></Parameter>
   <Parameter name="maxzoom">13</Parameter>
   <Parameter name="minzoom">0</Parameter>
   <Parameter name="name"><![CDATA[ac-source-prod]]></Parameter>
