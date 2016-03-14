@@ -11,9 +11,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -122.1295
-  - 50.4732
-  - 8
+  - -122.1899
+  - 49.8668
+  - 10
 description: The overlay features, labels, regions, etc.
 format: "png8:m=h"
 interactivity_layer: ''

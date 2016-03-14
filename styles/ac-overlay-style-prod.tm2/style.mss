@@ -22,7 +22,7 @@
     text-halo-radius: 2;
     text-wrap-before: true;
     text-placement: line;
-    text-dy: -7;
+    text-dy: 7;
   }
 
 #cac-polygons [zoom > 5] {

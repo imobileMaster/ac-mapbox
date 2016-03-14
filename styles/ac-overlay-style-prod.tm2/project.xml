@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[Avalanche Canada and Tesera Systems Inc.]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-122.1295,50.4732,8</Parameter>
+  <Parameter name="center">-122.1899,49.8668,10</Parameter>
   <Parameter name="description"><![CDATA[The overlay features, labels, regions, etc.]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
@@ -452,7 +452,7 @@
 <Style name="cac-polylines" filter-mode="first">
   <Rule>
     <MaxScaleDenominator>750000</MaxScaleDenominator>
-    <TextSymbolizer face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement="line" dy="-7" ><![CDATA[[display]]]></TextSymbolizer>
+    <TextSymbolizer face-name="Open Sans Regular" fill="#b43a7e" halo-fill="rgba(255, 255, 255, 0.7)" halo-radius="2" wrap-before="true" placement="line" dy="7" ><![CDATA[[display]]]></TextSymbolizer>
   </Rule>
 </Style>
 <Layer name="cac-polylines"
